@@ -1,0 +1,27 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Navigation from "../../components/Navigation.astro";
+import Posts from "../../components/Posts.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { getCollection } from "astro:content";
+// Get src/content/blog/**
+const allPosts = await getCollection("posts");
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <Navigation now="Posts" />
+      <Posts />
+    </main>
+    <Footer />
+  </body>
+</html>
