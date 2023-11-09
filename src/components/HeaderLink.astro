@@ -1,0 +1,22 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"a">;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const isActive = href === pathname || href === pathname.replace(/\/$/, "");
+---
+
+<a
+  href={href}
+  class={`block py-2 pl-3 ${
+    isActive
+      ? "underline   text-white md:text-blue-800 bg-blue-700 md:bg-transparent rounded"
+      : "text-black hover:text-gray-500 md:text-gray-700 bg-gray-100 md:bg-transparent rounded"
+  }`}
+  {...props}
+>
+  <slot />
+</a>

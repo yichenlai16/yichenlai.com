@@ -1,0 +1,12 @@
+---
+const { now } = Astro.props;
+---
+
+<nav class="mt-5">
+  <ul class="flex font-serif text-gray-500">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>>{now}</li>
+  </ul>
+</nav>
