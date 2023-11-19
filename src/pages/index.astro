@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Posts from "../components/Posts.astro";
 // const { title, description } = Astro.props;
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Content from "./_md/index.md";
 ---
 
 <html lang="en">
@@ -21,20 +22,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
     <main class="prose max-w-3xl py-10">
       <section>
-        <h1 class="text-2xl md:text-5xl">Hello, I'm Yichen Lai</h1>
-        <p class="">
-          Hello，我是Yichen，畢業於台北科技大學資訊管理與財務金融系
-        </p>
-        <p class="">
-          在求學期間有許多社團經驗，目前已完成服役義務。這裡是由Astro及TailwindCSS架構而成，平時我會用Markdown記錄我的筆記，經營這個網站除了記錄自己所學，更是給自己反思學習的機會。
-        </p>
-      </section>
-      <section>
-        <p>
-          <a href="#explore">關於</a> | <a href="mailto:me@yichenlai.com"
-            >聯絡我</a
-          >
-        </p>
+        <Content />
       </section>
       <section>
         <h2>Posts</h2>
