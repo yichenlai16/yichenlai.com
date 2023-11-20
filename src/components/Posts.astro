@@ -3,12 +3,16 @@ import FormattedDate from "../components/FormattedDate.astro";
 import { getCollection } from "astro:content";
 // Get src/content/blog/**
 const allPosts = await getCollection("posts");
+const sortedallPosts = await allPosts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+);
 ---
 
 <section class="not-prose font-sans">
   <ul>
     {
-      allPosts.map((post) => (
+      sortedallPosts.map((post) => (
         <li class="my-7">
           <a href={`/posts/${post.slug}/`}>
             <h2 class="text-lg  text-sky-700 hover:underline">
