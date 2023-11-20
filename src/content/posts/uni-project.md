@@ -1,5 +1,5 @@
 ---
-pubDate: 2023-10-20
+pubDate: 2023-11-15
 description: 爬蟲LineBot的製作及反思，本文會呈現當時的想法及製作流程，以及後來為了練習而改寫的作品。
 title: 爬蟲Bot：職缺提醒專案
 ---
@@ -67,7 +67,7 @@ title: 爬蟲Bot：職缺提醒專案
 
 104跟1111的條件大不相同，故需要做資料清洗
 
-> 反思：應該縮限到不必做資料清洗
+> 反思：應該縮限到不必做資料清洗，從可行性開始計畫
 
 
   
@@ -85,6 +85,7 @@ title: 爬蟲Bot：職缺提醒專案
 
 
 ## 後記專案：
+[Github Repo](https://github.com/yichenlai16/104-job-scraper)
 
 ### 專案目的：
 
@@ -97,4 +98,3 @@ title: 爬蟲Bot：職缺提醒專案
 - Scrapy 爬蟲
 - Elasticsearch 資料庫
 > Elasticsearch有透過Docker包裝，會有IK Analysis Plugin 中文分詞器，再來進行OpenCC翻譯成繁體中文`
-
