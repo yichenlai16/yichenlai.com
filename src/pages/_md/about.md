@@ -7,8 +7,8 @@ title: 'About'
 - Based in Taipei
 
 ## Contact
-- Email: [insert your email here]
-- Github: [insert your Github profile link here]
+- Email: <me@yichenlai.com>
+- Github: [@yichenlai16](https://github.com/yichenlai16)
 
 ## Site Tech
 

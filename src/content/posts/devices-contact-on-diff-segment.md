@@ -33,10 +33,10 @@ SNAT設定如下
 
 根據 Edge OS 配置，SNAT 設定如下：
 
-- **Source Address:** Home Assistant 的原 IP 地址
+- **Source Address:** Home Assistant 的源 IP 地址
 - Destination Address: 小米裝置的IP
 - **Outbound Interface:** switch0
 - **Protocol:** All（所有協議）
 - Translation Type: Masquerade
 
-這樣將使 Home Assistant 的連線看起來是與小米相同的網段了。
+這樣能讓 Home Assistant 的連線看起來是跟小米一樣的網段了
