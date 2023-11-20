@@ -16,15 +16,13 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   </head>
   <body>
     <Header />
-    <div class="">
+    <div class="py-5">
       <button class="hover:text-gray-500" onclick="history.back()">
         <span>＜ Back</span>
       </button>
     </div>
 
-    <article
-      class="prose mx-auto w-screen max-w-3xl font-sans dark:prose-invert"
-    >
+    <article class="prose mx-auto max-w-3xl font-sans dark:prose-invert">
       <h2>{title}</h2>
       <h5 class="text-base italic">
         <FormattedDate date={pubDate} />

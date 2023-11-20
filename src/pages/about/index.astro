@@ -8,18 +8,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import Content from "../_md/about.md";
 ---
 
-<html class="scrollbar">
+<html class="">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
-    <hr />
     <Navigation now="About" />
-
-    <section class="prose">
-      <Content />
-    </section>
+    <main class="prose max-w-3xl py-10">
+      <section>
+        <Content />
+      </section>
+    </main>
     <Footer />
   </body>
 </html>
