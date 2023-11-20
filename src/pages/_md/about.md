@@ -13,7 +13,7 @@ title: 'About'
 ## Site Tech
 
 ### Hosting
-- Github Pages
+- Netifly
 
 ### Domain Name Register
 - Google Domain
